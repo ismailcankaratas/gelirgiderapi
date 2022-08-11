@@ -9,7 +9,7 @@ dotenv.config();
 const app = express();
 
 const corsOptions = {
-    origin: "http://localhost:3000"
+    origin: "https://gelirgidertakip.42web.io/"
 }
 
 // middleware
