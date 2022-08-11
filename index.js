@@ -8,12 +8,10 @@ dotenv.config();
 
 const app = express();
 
-const corsOptions = {
-    origin: "https://gelirgidertakip.42web.io/"
-}
-
 // middleware
-app.use(cors(corsOptions))
+app.use(cors({
+    origin: 'https://gelirgidertakip.42web.io'
+}));
 app.use(express.json());
 // api
 app.use("/api/income", incomeRouter)
