@@ -42,7 +42,7 @@ app.use(session({
 }))
 
 app.use(cors({
-    origin: process.env.NODE_ENV === "prouction" ? 'https://gelirgidertakip.42web.io' : "http://localhost:3000",
+    origin: process.env.NODE_ENV === "production" ? 'https://gelirgidertakip.42web.io' : "http://localhost:3000",
     credentials: true
 }));
 
