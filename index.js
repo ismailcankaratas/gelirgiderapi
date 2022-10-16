@@ -11,7 +11,7 @@ import cookieParser from 'cookie-parser';
 import authRouter from './routes/auth.js';
 
 // development / production
-process.env.NODE_ENV = 'production';
+process.env.NODE_ENV = 'development';
 
 dotenv.config();
 
@@ -42,7 +42,7 @@ app.use(session({
 }))
 
 app.use(cors({
-    origin: process.env.NODE_ENV === "production" ? 'https://gelirgidertakip.42web.io' : "http://localhost:3000",
+    origin: process.env.NODE_ENV === "production" ? 'https://gelir-gider-client.vercel.app/' : "http://localhost:3000",
     credentials: true
 }));
 
